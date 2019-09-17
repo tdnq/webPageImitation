@@ -1,0 +1,207 @@
+    html,body{
+        font-family: sans-serif;
+        margin: 0.25em 0em;
+        padding: 0.25em 0em;
+    }
+    .container{
+        min-height: 100vh;
+        min-width: 528px;
+    }
+    .btn{
+        display: inline-block;
+        border-width: 0px;
+        cursor: pointer;
+    }
+    a{
+        text-decoration-line: none;
+        color: rgb(112, 106, 106);
+    }
+    a:hover{
+        color: #2d78f4;
+    }
+    nav {
+        text-align: right;
+    }
+
+    .nav-item{
+        font-weight: bold;
+        padding: 0.5em;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 0.9em;
+        text-decoration: underline;
+        position: relative;
+    }
+
+    .nav-item:hover {
+        color: #0000ff82;
+
+    }
+    .setting-control:hover .setting-menu{
+        visibility:visible;
+        max-height: 300px;
+        
+    }
+    .setting-menu{
+        color: black;
+        position: absolute;
+        text-align: left;
+        left: -0.5em;
+        top: 1.5em;
+        padding: 0.2em 0.1em;
+        margin-top: 0.5em;
+        border-radius: 4px;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-width 5s;
+        border: 1px solid #a99a9a;
+        box-shadow: 0px 0px 2px 0px #968888;
+        visibility: hidden;
+        line-height: 1.6em;
+        
+    }
+    .setting-menu .menu-item :hover{
+        color: #2d78f4;
+    }
+    .button-more-control{
+        border: 1px solid transparent;
+    }
+    .button-more-control:hover{
+        background-color: #f9f9f9;
+        border:1px solid #b3b0b0;
+    }
+    .button-more-control:hover .more-button{
+        color: black;
+        background-color: inherit;
+        border-color: transparent;
+    }
+    .button-more-control:hover .more-menu{
+        visibility:visible;
+        height: calc(100vh - 60px);
+        overflow: auto;
+        
+    }
+    .more-menu{
+        color: black;
+        position: absolute;
+        text-align: left;
+        left: calc(-0.5em + 5px);
+        top: 2em;
+        padding: 0.2em 0.1em;
+        margin-top: 1em;
+        border-radius: 4px;
+        overflow: hidden;
+        transition: max-width 5s;
+        border: 1px solid #a99a9a;
+        box-shadow: 0px 0px 3px 0px #968888;
+        text-align: center;
+        width: 100%;
+        visibility: hidden;
+        background-color: #f9f9f9;
+        
+    }
+    .menu-item{
+        display: inline-block;
+    }
+    .setting-menu .menu-item{
+        white-space: nowrap;
+    }
+    .more-menu .menu-item{
+        border-bottom: 1px solid rgb(175, 172, 172);
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+    }
+    .more-menu img{
+        max-width: 72px;
+    }
+    .more-button {
+        background-color: #2d78f4;
+        padding: 4px;
+        border: 1px solid #2d78f4;
+        color: white;
+        cursor: pointer;
+    }
+    .logo{
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .logo img{
+        max-width: 30%;
+    }
+    .form-control{
+        text-align: center;
+        font-size: 0px;
+    }
+    .form-control input{
+        font-size: 16px;
+        width: 50%;
+        height: 2rem;
+    }
+    .form-control button{
+        font-size: 16px;
+        height: calc(2rem + 6px);
+        background-color: #317ef3;
+        padding: 0em 1em;
+        color: white;
+        vertical-align: bottom;
+    }
+    .footer{
+        margin-top: 5rem;
+        text-align: center;
+    }
+    .footer-item{
+        margin: 0.5em;
+        cursor: pointer;
+        font-size: 0.8em;
+        color: #9a9797;
+        display: inline-block;
+        text-decoration-line: underline;
+    }
+    .footer-item:hover{
+        color: rgb(64, 64, 138);
+    }
+    .sign-wrapper{
+        top: 0px;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: hsla(120, 20%, 0%, 0.5);
+        display: none;
+    }
+    .sign-box{
+        margin: 50vh auto 0px auto;
+        transform: translateY(-50%);
+        width: 300px;
+        border:1px solid rgb(212, 205, 205);
+        border-radius: 5px;
+        padding: 2em 30px;
+        background-color: white;
+    }
+    .sign-logo{
+        vertical-align: bottom;
+    }
+    .close{
+        text-align: right;
+        font-size: 2em;
+        padding: 0em 0.5em;
+        cursor: pointer;
+    }
+    .close:hover{
+        color: rgb(153, 147, 147);
+    }
+    .sign-box .inputFiled{
+        border:1px solid #b5b2b2c4;
+        width: 100%;
+        display: block;
+        height: 2rem;
+        margin: 1em auto;
+    }
+    .btn-sign{
+        width: 100%;
+        height: 2rem;
+        margin-top: 2rem;
+        background-color: #317ef3;
+        color: white;
+        border-width: 0px;
+        font-size: 1.2em;
+    }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./home.css">
+    <title>baidu-home</title>
+</head>
+<body>
+    <div class="container">
+        <!-- 导航栏 -->
+        <nav>
+            <span class="nav-item">
+                    新闻
+            </span>
+            <span class="nav-item">
+                hao123
+            </span>
+            <span class="nav-item">
+                地图
+            </span>
+            <span class="nav-item">
+                视频
+            </span>
+            <span class="nav-item">
+                贴吧
+                
+            </span>
+            <span class="nav-item">
+                学术
+            </span>
+            <span class="nav-item" id="signIn">
+                登录
+            </span>
+            <span class="nav-item setting-control">
+                设置
+                <span class="setting-menu">
+                    <span class="menu-item">搜索设置</span>
+                    <span class="menu-item">高级搜索</span>
+                    <span class="menu-item">关闭预测</span>
+                    <span class="menu-item">隐私设置</span>
+                </span>
+            </span>
+            <span class="nav-item button-more-control">
+                <button type="button" class="more-button">更多产品</button>
+                    <span class="more-menu">
+                        <span class="menu-item">
+                            <img src="./images/nuomi_7f5cd35.png" alt="">
+                            <a href="#">糯米</a>
+                        </span>
+                        <span class="menu-item">
+                            <img src="./images/qqjt_9809ca8.png" alt="">
+                            <a href="#">
+                                音乐
+                            </a>
+                        </span>
+                </span>
+            </span>
+        </nav>
+        <!-- 搜索框 -->
+        <div class="logo">
+            <img src="./images/bd_logo1.png" alt="logo">
+        </div>
+        <div class="search">
+            <form action="" class="form-control">
+                <input type="text">
+                <button type="button" class="btn">搜索一下</button>
+            </form>
+        </div>
+        <div class="footer">
+            <span class="footer-item">把百度设为主页</span>
+            <span class="footer-item">关于百度</span>
+            <span class="footer-item">About  Baidu</span>
+            <span class="footer-item">百度推广</span>
+        </div>
+        <div class="sign-wrapper">
+                <div class="sign-box">
+                    <div class="close" id="closeSign">
+                        <span>
+                            ×
+                        </span>
+                    </div>
+                    <div class="sign-title">
+                        <img src="./images/bd_logo1.png" width="40%" alt="logo" class="sign-logo">
+                        <span>·用户名密码登录</span>
+                    </div>
+                    <div class="sign-content">
+                        <input type="text" class="inputFiled" placeholder=" 手机/邮箱/用户名">
+                        <input type="password" class="inputFiled" placeholder=" 密码">
+                        <input type="checkbox" name="vehicle" value="Bike">记住登陆信息
+                        <button type="button" class="button btn-sign">登录</button>
+                        <p>
+                            <a href="忘记密码？"></a>
+                        </p>
+                    </div>
+        
+                </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var signInButton = document.getElementById("signIn");
+        var colseSign = document.getElementById("closeSign");
+        var sign_wrapper=document.getElementsByClassName("sign-wrapper");
+            console.log(sign_wrapper);
+        signInButton.onclick=function(){
+            sign_wrapper.item(0).style.display="block";
+        }
+        colseSign.onclick=function(){
+            sign_wrapper.item(0).style.display="none";
+        }
+    </script>
+</body>
+
+</html>
